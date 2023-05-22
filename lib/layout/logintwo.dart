@@ -1,6 +1,7 @@
 import 'package:btaproject/layout/beta%20layout.dart';
 import 'package:btaproject/shared/componants.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class SignUp_Screen extends StatelessWidget {
 
@@ -11,21 +12,21 @@ class SignUp_Screen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Padding(
-        padding: const EdgeInsets.all(10.0),
+        padding:  EdgeInsets.all(10.0.w),
         child: Center(
           child: SingleChildScrollView(
             child: Padding(
-              padding: const EdgeInsets.all(20.0),
+              padding:  EdgeInsets.all(20.0.w),
               child: Column (
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Image(
                     image: AssetImage('assets/imeges/Logo Transparent.png'),
-                    height: 150.0,
-                    width: 150.0,
+                    height: 150.0.h,
+                    width: 150.0.w,
                   ),
                   SizedBox(
-                    height: 30.0,
+                    height: 30.0.h,
                   ),
                   Container(
                     child: TextFormField(
@@ -44,7 +45,7 @@ class SignUp_Screen extends StatelessWidget {
                     ),
                   ),
                   SizedBox(
-                    height: 15.0,
+                    height: 15.0.h,
                   ),
                   Container(
                     child: TextFormField(
@@ -64,7 +65,7 @@ class SignUp_Screen extends StatelessWidget {
                     ),
                   ),
                   SizedBox(
-                    height: 8.0,
+                    height: 8.0.h,
                   ),
                   Container(
                     child: TextFormField(
@@ -84,7 +85,7 @@ class SignUp_Screen extends StatelessWidget {
                     ),
                   ),
                   SizedBox(
-                    height: 8.0,
+                    height: 8.0.h,
                   ),
                   Container(
                     width: double.infinity,
@@ -104,11 +105,11 @@ class SignUp_Screen extends StatelessWidget {
                     ),
                   ),
                   SizedBox(
-                    height: 8.0,
+                    height: 8.0.h,
                   ),
                   Container(
                     decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(20.0),
+                      borderRadius: BorderRadius.circular(20.0.r),
                       color: Colors.black,
                     ),
 
@@ -129,14 +130,14 @@ class SignUp_Screen extends StatelessWidget {
                         'Sign up',
                         style: TextStyle(
                           color: Colors.white,
-                          fontSize: 20.0,
+                          fontSize: 20.0.sp,
                         ),
                       ),
 
                     ),
                   ),
                   SizedBox(
-                    height:10.0,
+                    height:10.0.h,
                   ),
                   Row(
                     children: [
@@ -147,8 +148,8 @@ class SignUp_Screen extends StatelessWidget {
                         ),
                       ),
                       Padding(
-                        padding: const EdgeInsets.symmetric(
-                          horizontal: 10.0,
+                        padding:  EdgeInsets.symmetric(
+                          horizontal: 10.0.h,
                         ),
                         child: Text('or connect whith'),
                       ),
@@ -162,15 +163,15 @@ class SignUp_Screen extends StatelessWidget {
                     ],
                   ),
                   SizedBox(
-                    height:10.0,
+                    height:10.0.h,
                   ),
                   Row(
                     children: [
                       Container(
                         child: defaultWhitebuttom(function: (){},
                           text: 'Google',
-                          width: 165,
-                          height: 48,
+                          width: 125.w,
+                          height: 48.h,
                           Shape: BoxShape.rectangle,
 
                         ),
@@ -179,8 +180,8 @@ class SignUp_Screen extends StatelessWidget {
                       Container(
                         child: defaultWhitebuttom(function: (){},
                           text: 'Apple',
-                          width: 165,
-                          height: 48,
+                          width: 125.w,
+                          height: 48.h,
                           Shape: BoxShape.rectangle,
 
                         ),

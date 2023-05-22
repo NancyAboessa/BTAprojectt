@@ -1,6 +1,7 @@
 import 'package:btaproject/layout/logintwo.dart';
 import 'package:btaproject/shared/componants.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class loginScreen extends StatelessWidget
@@ -14,11 +15,11 @@ class loginScreen extends StatelessWidget
   Widget build(BuildContext context) {
     return Scaffold(
       body: Padding(
-        padding: const EdgeInsets.all(10.0),
+        padding:  EdgeInsets.all(10.0.w),
         child: Center(
           child: SingleChildScrollView(
             child: Padding(
-              padding: const EdgeInsets.all(20.0),
+              padding:  EdgeInsets.all(20.0.w),
               child: Form(
                 key:formKey ,
                 child: Column (
@@ -26,11 +27,11 @@ class loginScreen extends StatelessWidget
                   children: [
                     Image(
                       image: AssetImage('assets/imeges/Logo Transparent.png'),
-                      height: 150.0,
-                      width: 150.0,
+                      height: 150.0.h,
+                      width: 150.0.w,
                     ),
                     SizedBox(
-                      height: 30.0,
+                      height: 30.0.h,
                     ),
                     TextFormField(
                       controller: emaiController,
@@ -55,7 +56,7 @@ class loginScreen extends StatelessWidget
                       },
                     ),
                     SizedBox(
-                      height: 15.0,
+                      height: 15.0.h,
                     ),
                     TextFormField(
                       controller:passwordController ,
@@ -81,7 +82,7 @@ class loginScreen extends StatelessWidget
                       },
                     ),
                     SizedBox(
-                      height: 8.0,
+                      height: 8.0.h,
                     ),
                     Container(
                       width: double.infinity,
@@ -101,11 +102,11 @@ class loginScreen extends StatelessWidget
                       ),
                     ),
                     SizedBox(
-                      height: 8.0,
+                      height: 8.0.h,
                     ),
                     Container(
                       decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(20.0),
+                        borderRadius: BorderRadius.circular(20.0.r),
                         color: Colors.black,
                       ),
                       width: double.infinity,
@@ -125,18 +126,18 @@ class loginScreen extends StatelessWidget
                           'Login',
                           style: TextStyle(
                             color: Colors.white,
-                            fontSize: 20.0,
+                            fontSize: 20.0.sp,
                           ),
                         ),
 
                       ),
                     ),
                     SizedBox(
-                      height: 8.0,
+                      height: 8.0.h,
                     ),
                     Container(
                       decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(20.0),
+                        borderRadius: BorderRadius.circular(20.0.r),
                         color: Colors.black,
                       ),
 
@@ -156,14 +157,14 @@ class loginScreen extends StatelessWidget
                           'Sign up',
                           style: TextStyle(
                             color: Colors.white,
-                            fontSize: 20.0,
+                            fontSize: 20.0.sp,
                           ),
                         ),
 
                       ),
                     ),
                     SizedBox(
-                      height:10.0,
+                      height:10.0.h,
                     ),
                     Row(
                       children: [
@@ -174,8 +175,8 @@ class loginScreen extends StatelessWidget
                           ),
                         ),
                         Padding(
-                          padding: const EdgeInsets.symmetric(
-                            horizontal: 10.0,
+                          padding:  EdgeInsets.symmetric(
+                            horizontal: 10.0.w,
                           ),
                           child: Text('or connect with'),
                         ),
@@ -203,15 +204,15 @@ class loginScreen extends StatelessWidget
 
                               child: defaultWhitebuttom(function: (){},
                               text: 'Google',
-                               width: 165,
-                                height: 48,
+                               width: 125.w,
+                                height: 48.h,
                                 Shape: BoxShape.rectangle,
 
                               ),
                             ),
                           ],
                         ),
-                        SizedBox(width: 10,),
+                        SizedBox(width: 10.w,),
                         Stack(
                           children: [
                             Icon(FontAwesomeIcons.apple,
@@ -222,8 +223,8 @@ class loginScreen extends StatelessWidget
 
                               child: defaultWhitebuttom(function: (){},
                                 text: 'Apple',
-                                width: 165,
-                                height: 48,
+                                width: 125.w,
+                                height: 48.h,
                                 Shape: BoxShape.rectangle,
 
                               ),

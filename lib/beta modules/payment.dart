@@ -1,5 +1,5 @@
-import 'package:btaproject/shared/componants.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class Payment extends StatefulWidget {
   const Payment({Key? key}) : super(key: key);
@@ -30,14 +30,14 @@ class _PaymentState extends State<Payment> {
 
       body: SingleChildScrollView(
         child: Padding(
-          padding: const EdgeInsets.all(3),
+          padding:  EdgeInsets.all(3.w),
           child: Center(
-            heightFactor: 1.5,
+            heightFactor: 1.5.h,
             child: Column(
 
               children: [
                 Padding(
-                  padding: const EdgeInsets.all(20),
+                  padding:  EdgeInsets.all(20.r),
                   child: Expanded(
 
                     child: Stack(
@@ -53,17 +53,17 @@ class _PaymentState extends State<Payment> {
 
 
                               ),
-                              width: 380,
-                              height: 145,
+                              width: 380.w,
+                              height: 145.h,
                                  child: Column(
                                    children: [
                                      Row(
                                        children: [
                                          Container(
-                                           height: 60,
-                                           width: 180,
+                                           height: 60.h,
+                                           width: 180.w,
                                            decoration: BoxDecoration(   color: Color(0xFF454F63),
-                                             borderRadius:BorderRadius.circular(20.0),
+                                             borderRadius:BorderRadius.circular(20.0.r),
 
                                            ),
 
@@ -95,13 +95,13 @@ class _PaymentState extends State<Payment> {
                                            ),
                                          ),
                                          SizedBox(
-                                           width: 5,
+                                           width: 5.w,
                                          ),
                                          Container(
-                                           height: 60,
-                                           width: 180,
+                                           height: 60.h,
+                                           width: 180.w,
                                            decoration: BoxDecoration(   color: Color(0xFF454F63),
-                                             borderRadius:BorderRadius.circular(20.0),
+                                             borderRadius:BorderRadius.circular(20.0.r),
 
                                            ),
 
@@ -136,15 +136,15 @@ class _PaymentState extends State<Payment> {
                                        ],
                                      ),
                                      SizedBox(
-                                       height: 10,
+                                       height: 10.h,
                                      ),
                                      Row(
                                        children: [
                                          Container(
-                                           height: 60,
-                                           width: 180,
+                                           height: 60.h,
+                                           width: 180.w,
                                            decoration: BoxDecoration(  color:Color(0xFF454F63),
-                                             borderRadius:BorderRadius.circular(20.0),
+                                             borderRadius:BorderRadius.circular(20.0.r),
 
                                            ),
 
@@ -176,13 +176,13 @@ class _PaymentState extends State<Payment> {
                                            ),
                                          ),
                                          SizedBox(
-                                           width: 5,
+                                           width: 5.w,
                                          ),
                                          Container(
-                                           height: 60,
-                                           width: 180,
+                                           height: 60.h,
+                                           width: 180.w,
                                            decoration: BoxDecoration(   color: Color(0xFF454F63),
-                                             borderRadius:BorderRadius.circular(20.0),
+                                             borderRadius:BorderRadius.circular(20.0.r),
 
                                            ),
 
@@ -233,7 +233,7 @@ class _PaymentState extends State<Payment> {
                   height: 60,
                   width: double.infinity,
                   decoration: BoxDecoration(   color: Colors.white,
-                    borderRadius:BorderRadius.circular(20.0),
+                    borderRadius:BorderRadius.circular(20.0.r),
                   ),
 
                   child: TextFormField(
@@ -257,12 +257,12 @@ class _PaymentState extends State<Payment> {
                     ),
                   ),
                 ),
-                SizedBox(height: 20,),
+                SizedBox(height: 20.h,),
                 Container(
-                  height: 60,
+                  height: 60.h,
                   width: double.infinity,
                   decoration: BoxDecoration(   color: Colors.white,
-                    borderRadius:BorderRadius.circular(20.0),
+                    borderRadius:BorderRadius.circular(20.0.r),
                   ),
 
                   child: TextFormField(
@@ -289,12 +289,12 @@ class _PaymentState extends State<Payment> {
                     ),
                   ),
                 ),
-                SizedBox(height: 20,),
+                SizedBox(height: 20.h,),
                 Container(
                   width: double.infinity,
-                  height: 150,
+                  height: 150.h,
                   decoration: BoxDecoration(
-                    borderRadius:BorderRadius.circular(20.0),
+                    borderRadius:BorderRadius.circular(20.0.r),
                     color: Colors.white,
 
                   ),
@@ -302,7 +302,7 @@ class _PaymentState extends State<Payment> {
                     mainAxisAlignment: MainAxisAlignment.start,
                     children: [
                       Padding(
-                        padding: const EdgeInsets.all(8.0),
+                        padding: EdgeInsets.all(8.0.w),
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.start,
                           children: [
@@ -320,15 +320,15 @@ class _PaymentState extends State<Payment> {
                   ),
                 ),
                 Padding(
-                       padding: const EdgeInsets.all(8.0),
+                       padding:  EdgeInsets.all(8.0.w),
                        child: Row(
                          mainAxisAlignment: MainAxisAlignment.center,
                          children: [
                            Container(
-                             width: 155,
-                             height: 52,
+                             width: 155.w,
+                             height: 52.h,
                              decoration: BoxDecoration(
-                               borderRadius: BorderRadius.circular(20),
+                               borderRadius: BorderRadius.circular(20.r),
                                color: Colors.white,
                              ),
                              child: MaterialButton(onPressed: (){},
@@ -343,10 +343,10 @@ class _PaymentState extends State<Payment> {
                            ),
                           Spacer(),
                            Container(
-                             width: 155,
-                             height: 52,
+                             width: 155.w,
+                             height: 52.h,
                              decoration: BoxDecoration(
-                               borderRadius: BorderRadius.circular(20),
+                               borderRadius: BorderRadius.circular(20.r),
                                color: Colors.white,
                              ),
                              child: MaterialButton(onPressed: (){

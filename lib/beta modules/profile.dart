@@ -5,6 +5,7 @@ import 'package:btaproject/shared/componants.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:bloc/bloc.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 
 class profile extends StatefulWidget {
@@ -26,11 +27,11 @@ class _profileState extends State<profile> {
 
         color: Color(0xFF2a2e43),
         child: Padding(
-          padding: const EdgeInsets.symmetric(vertical: 3),
+          padding:  EdgeInsets.symmetric(vertical: 3.h),
           child: Column(
             children: [
               Padding(
-                padding: const EdgeInsets.only(left: 20),
+                padding:  EdgeInsets.only(left: 20.w),
                 child: Row(
                   children: [
                     Text('Profile',
@@ -44,15 +45,15 @@ class _profileState extends State<profile> {
                 ),
               ),
               // Profile Text
-              SizedBox(height: 20.0,),
+              SizedBox(height: 20.0.h,),
               Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Center(
                     child: Container(
 
-                      height: 128.0,
-                      width: 128.0,
+                      height: 128.0.h,
+                      width: 128.0.w,
 
                       child: Image.asset('assets/imeges/avatar.png',),
                     ),
@@ -61,7 +62,7 @@ class _profileState extends State<profile> {
                 ],
               ),
               //avatar imege
-              SizedBox(height: 20.0,),
+              SizedBox(height: 20.0.h,),
               Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: Text('USER',
@@ -74,7 +75,7 @@ class _profileState extends State<profile> {
               ),
               // usar text
               Padding(
-                padding: const EdgeInsets.all(10),
+                padding:  EdgeInsets.all(10.w),
                 child: Row(
                   children: [
                     defaultButtom(
@@ -82,7 +83,7 @@ class _profileState extends State<profile> {
                       text: 'Payment',
 
                     ),
-                    SizedBox(width: 9,),
+                    SizedBox(width: 5.w,),
                     defaultButtom(
                       function:(){} ,
                       text: 'Scan QR',
@@ -94,7 +95,7 @@ class _profileState extends State<profile> {
               ),
               //payment qrcode buttom
               Padding(
-                padding: const EdgeInsets.symmetric(vertical: 40),
+                padding:  EdgeInsets.symmetric(vertical: 40.h),
                 child: Row(
                   //crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -103,12 +104,12 @@ class _profileState extends State<profile> {
                         children: [
                           Text('YOUR BTA TAG',
                             style: TextStyle(
-                              fontSize: 20.0,
+                              fontSize: 20.0.sp,
                               fontWeight: FontWeight.w300,
                               color: Colors.white,
                             ),
                           ),
-                          SizedBox(height:10.0),
+                          SizedBox(height:10.0.h),
                           //connect now buttom
                           InkWell(
                             onTap: (){
@@ -122,7 +123,7 @@ class _profileState extends State<profile> {
                               text: 'CONNECT NOW',
                             ),
                           ),
-                          SizedBox(height:10.0),
+                          SizedBox(height:10.0.h),
 
                           //your location buttom
                           defaultButtom(
@@ -137,8 +138,8 @@ class _profileState extends State<profile> {
                     Column(
                       children: [
                         Container(
-                          height: 181.0,
-                          width: 188.0,
+                          height: 181.0.h,
+                          width: 188.0.w,
                           child: Image.asset('assets/imeges/Image 1.png',),
                         ),
                       ],

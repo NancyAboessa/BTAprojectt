@@ -1,3 +1,4 @@
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import 'package:flutter/material.dart';
 class map extends StatefulWidget {
@@ -14,7 +15,7 @@ class _mapState extends State<map> {
     return Scaffold(
       body: Stack(
         children: [
-          Image.asset('assets/imeges/Rectangle 1575.png',fit: BoxFit.cover,height: 750,width: 437,),
+          Image.asset('assets/imeges/Rectangle 1575.png',fit: BoxFit.cover,height: 750.h,width: 437.w,),
 
         ],
       ),

@@ -8,7 +8,6 @@ class Beta_layout extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    int  currentIndex=0;
     return BlocProvider(
       create: (BuildContext context) => BetaCubit(),
       child: BlocConsumer<BetaCubit,BetaState>(
@@ -35,7 +34,6 @@ class Beta_layout extends StatelessWidget {
               },
               items: cubit.BottomItems,
 
-              //  landscapeLayout: BottomNavigationBarLandscapeLayout.centered,
 
             ),
 

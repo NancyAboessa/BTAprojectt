@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class support extends StatelessWidget {
   const support({Key? key}) : super(key: key);
@@ -9,7 +10,7 @@ class support extends StatelessWidget {
       backgroundColor: Color(0xFF2a2e43),
       body: Center(
         child: Padding(
-          padding: const EdgeInsets.all(20.0),
+          padding:  EdgeInsets.all(20.0.w),
           child: Column (
             children: [
 
@@ -19,19 +20,19 @@ class support extends StatelessWidget {
             ),
               Container(
                 decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(20.0),
+                  borderRadius: BorderRadius.circular(20.0.r),
                   color: Colors.black26,
 
                 ),
                 child: Padding(
-                  padding: const EdgeInsets.all(10.0),
+                  padding:  EdgeInsets.all(10.0.w),
                   child: Row(
                     children: [
                       Icon(Icons.tag_faces_outlined,
                         color: Colors.white,
                       ),
                       SizedBox(
-                        width: 10.0,
+                        width: 10.0.w,
                       ),
                       Text('Type your message',
                         style: TextStyle(
@@ -43,18 +44,18 @@ class support extends StatelessWidget {
                         children: [
                           IconButton(onPressed: (){},
                               icon: CircleAvatar(
-                                radius: 20.0,
+                                radius: 20.0.r,
                                 backgroundColor:Colors.blue,
                                 child: Icon(
                                   Icons.camera_alt ,
                                 ),
                               )),
                           SizedBox(
-                            width: 0.5,
+                            width: 0.5.w,
                           ),
                           IconButton(onPressed: (){},
                               icon: CircleAvatar(
-                                radius: 20.0,
+                                radius: 20.0.r,
                                 backgroundColor:Colors.blue,
                                 child: Icon(
                                   Icons.mic ,

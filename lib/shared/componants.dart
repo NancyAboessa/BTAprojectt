@@ -1,8 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 Widget defaultButtom({
-  double width=191.0,
+  double  width= 165.0,
   double  height=39.0,
   Color ? Background,
   // Shape boxshape=BoxShape.rectangle,
@@ -10,14 +11,14 @@ Widget defaultButtom({
   required  String  text,
 
 }) => Container(
-  width: width,
-  height: height,
+  width: width.w,
+  height: height.h,
 
   decoration: BoxDecoration(
     border: Border.all(color: Colors.white),
     shape: BoxShape.rectangle,
 
-    borderRadius:BorderRadius.circular(20.0),
+    borderRadius:BorderRadius.circular(20.0.r),
     color:  Color(0xFF2a2e43),
 
   ),
@@ -41,8 +42,8 @@ Widget defaultWhitebuttom({
   required String text,
 
 }) =>  Container(
-  width: width,
-  height: height,
+  width: width?.w,
+  height: height?.h,
 
   decoration: BoxDecoration(
     border: Border.all(color: Colors.white),
@@ -61,7 +62,7 @@ Widget defaultWhitebuttom({
       )
     ],
 
-    borderRadius:BorderRadius.circular(0.0),
+    borderRadius:BorderRadius.circular(0.0.r),
   ),
   child: MaterialButton(onPressed:function(),
     textColor: Colors.white,
@@ -71,7 +72,7 @@ Widget defaultWhitebuttom({
 
       text,
       style: TextStyle(
-        fontSize: 15,
+        fontSize: 15.sp,
         fontWeight: FontWeight.w300,
         color: Colors.black,
       ),
