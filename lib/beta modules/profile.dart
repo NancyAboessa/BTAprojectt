@@ -7,7 +7,6 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:bloc/bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-
 class profile extends StatefulWidget {
   const profile({Key? key}) : super(key: key);
 
@@ -16,27 +15,25 @@ class profile extends StatefulWidget {
 }
 
 class _profileState extends State<profile> {
-
   @override
   Widget build(BuildContext context) {
-    BetaCubit cubit=BetaCubit.get(context);
+    BetaCubit cubit = BetaCubit.get(context);
 
     return Scaffold(
-
       body: Container(
-
         color: Color(0xFF2a2e43),
         child: Padding(
-          padding:  EdgeInsets.symmetric(vertical: 3.h),
+          padding: EdgeInsets.symmetric(vertical: 3.h),
           child: Column(
             children: [
               Padding(
-                padding:  EdgeInsets.only(left: 20.w),
+                padding: EdgeInsets.only(left: 20.w),
                 child: Row(
                   children: [
-                    Text('Profile',
+                    Text(
+                      'Profile',
                       style: TextStyle(
-                        fontSize: 40.0,
+                        fontSize: 35.sp,
                         fontWeight: FontWeight.w400,
                         color: Colors.white,
                       ),
@@ -45,93 +42,96 @@ class _profileState extends State<profile> {
                 ),
               ),
               // Profile Text
-              SizedBox(height: 20.0.h,),
+              SizedBox(
+                height: 15.0.h,
+              ),
               Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Center(
                     child: Container(
-
                       height: 128.0.h,
                       width: 128.0.w,
-
-                      child: Image.asset('assets/imeges/avatar.png',),
+                      child: Image.asset(
+                        'assets/imeges/avatar.png',
+                      ),
                     ),
                   )
-
                 ],
               ),
               //avatar imege
-              SizedBox(height: 20.0.h,),
+              SizedBox(
+                height: 15.0.h,
+              ),
               Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: Text('USER',
+                padding: EdgeInsets.all(8.w),
+                child: Text(
+                  'USER',
                   style: TextStyle(
                     fontWeight: FontWeight.w400,
-                    fontSize: 30.0,
+                    fontSize: 30.sp,
                     color: Colors.white,
                   ),
                 ),
               ),
               // usar text
               Padding(
-                padding:  EdgeInsets.all(10.w),
+                padding: EdgeInsets.all(10.w),
                 child: Row(
                   children: [
                     defaultButtom(
-                      function:(){},
+                      function: () {},
                       text: 'Payment',
-
                     ),
-                    SizedBox(width: 5.w,),
+                    SizedBox(
+                      width: 5.w,
+                    ),
                     defaultButtom(
-                      function:(){} ,
+                      function: () {},
                       text: 'Scan QR',
-
                     ),
-
                   ],
                 ),
               ),
               //payment qrcode buttom
               Padding(
-                padding:  EdgeInsets.symmetric(vertical: 40.h),
+                padding: EdgeInsets.symmetric(vertical: 20.h),
                 child: Row(
                   //crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Expanded(
                       child: Column(
                         children: [
-                          Text('YOUR BTA TAG',
+                          Text(
+                            'YOUR BTA TAG',
                             style: TextStyle(
                               fontSize: 20.0.sp,
                               fontWeight: FontWeight.w300,
                               color: Colors.white,
                             ),
                           ),
-                          SizedBox(height:10.0.h),
+                          SizedBox(height: 10.0.h),
                           //connect now buttom
                           InkWell(
-                            onTap: (){
-                              Navigator. push(context, MaterialPageRoute(
-                                builder: (context)=>store(),
-                              ));
-
+                            onTap: () {
+                              Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                    builder: (context) => store(),
+                                  ));
                             },
                             child: defaultButtom(
-                              function:(){} ,
+                              function: () {},
                               text: 'CONNECT NOW',
                             ),
                           ),
-                          SizedBox(height:10.0.h),
+                          SizedBox(height: 10.0.h),
 
                           //your location buttom
                           defaultButtom(
-                            function: (){},
+                            function: () {},
                             text: 'Scan QR',
-
                           ),
-
                         ],
                       ),
                     ),
@@ -140,22 +140,19 @@ class _profileState extends State<profile> {
                         Container(
                           height: 181.0.h,
                           width: 188.0.w,
-                          child: Image.asset('assets/imeges/Image 1.png',),
+                          child: Image.asset(
+                            'assets/imeges/Image 1.png',
+                          ),
                         ),
                       ],
                     ),
-
                   ],
                 ),
               ),
             ],
-
-
           ),
         ),
-
       ),
-
     );
   }
 }

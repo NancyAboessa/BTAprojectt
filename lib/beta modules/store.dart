@@ -12,10 +12,10 @@ class _storeState extends State<store> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor:  Color(0xFF2a2e43),
+      backgroundColor: Color(0xFF2a2e43),
       body: SingleChildScrollView(
         child: Padding(
-          padding:  EdgeInsets.all(10.0.w),
+          padding: EdgeInsets.all(10.0.w),
           child: Column(
             children: [
               //store text
@@ -24,9 +24,10 @@ class _storeState extends State<store> {
                   Column(
                     mainAxisAlignment: MainAxisAlignment.start,
                     children: [
-                      Text('Store',
+                      Text(
+                        'Store',
                         style: TextStyle(
-                          fontSize: 40.0.sp,
+                          fontSize: 35.0.sp,
                           fontWeight: FontWeight.w400,
                           color: Colors.white,
                         ),
@@ -36,70 +37,66 @@ class _storeState extends State<store> {
                 ],
               ),
 
-              SizedBox(height: 20.0.h,),
+              SizedBox(
+                height: 15.0.h,
+              ),
               SingleChildScrollView(
                 scrollDirection: Axis.vertical,
-
                 child: Column(
                   children: [
                     Padding(
-                      padding:  EdgeInsets.all(8.0.w),
+                      padding: EdgeInsets.all(8.0.w),
                       child: Container(
                         decoration: BoxDecoration(
                           border: Border.all(color: Colors.white),
-                          borderRadius:BorderRadius.circular(20.0.r),
+                          borderRadius: BorderRadius.circular(20.0.r),
                           color: Colors.black,
-
                         ),
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.spaceAround,
                           crossAxisAlignment: CrossAxisAlignment.center,
                           children: [
-
                             Column(
                               crossAxisAlignment: CrossAxisAlignment.end,
                               children: [
-                                Image.asset('assets/imeges/Image 1.png',height: 130.h,),
+                                Image.asset(
+                                  'assets/imeges/Image 1.png',
+                                  height: 130.h,
+                                ),
                               ],
                             ),
                             Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-
-                                Text('BTA TAG',
+                                Text(
+                                  'BTA TAG',
                                   style: TextStyle(
                                     fontWeight: FontWeight.w400,
-                                    fontSize: 40.0.sp,
+                                    fontSize: 35.sp,
                                     color: Colors.white,
                                   ),
-
                                 ),
-                                Text('PRICE: 5',
+                                Text(
+                                  'PRICE: 5',
                                   style: TextStyle(
                                     fontWeight: FontWeight.w400,
                                     fontSize: 15.0.sp,
                                     color: Colors.white,
                                   ),
-
                                 ),
                                 Container(
                                   width: 120.0.w,
                                   height: 30.0.h,
-
                                   decoration: BoxDecoration(
-
                                     border: Border.all(color: Colors.white),
                                     shape: BoxShape.rectangle,
                                     color: Colors.white,
-
-                                    borderRadius:BorderRadius.circular(20.0.r),
+                                    borderRadius: BorderRadius.circular(20.0.r),
                                   ),
-                                  child: MaterialButton(onPressed:(){},
+                                  child: MaterialButton(
+                                    onPressed: () {},
                                     textColor: Colors.white,
-
-
                                     child: Text(
-
                                       'ORDER NOW',
                                       style: TextStyle(
                                         fontSize: 15.sp,
@@ -111,50 +108,49 @@ class _storeState extends State<store> {
                                 ),
                               ],
                             ),
-
                           ],
                         ),
                       ),
                     ),
                     Padding(
-                      padding:  EdgeInsets.all(8.0.w),
+                      padding: EdgeInsets.all(8.0.w),
                       child: Container(
                         decoration: BoxDecoration(
                           border: Border.all(color: Colors.white),
-                          borderRadius:BorderRadius.circular(20.0.r),
+                          borderRadius: BorderRadius.circular(20.0.r),
                           color: Colors.black,
-
                         ),
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.spaceAround,
                           crossAxisAlignment: CrossAxisAlignment.center,
                           children: [
-
                             Column(
                               crossAxisAlignment: CrossAxisAlignment.end,
                               children: [
-                                Image.asset('assets/imeges/Image 1.png',height: 130.h,),
+                                Image.asset(
+                                  'assets/imeges/Image 1.png',
+                                  height: 130.h,
+                                ),
                               ],
                             ),
                             Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-
-                                Text('BTA TAG',
+                                Text(
+                                  'BTA TAG',
                                   style: TextStyle(
                                     fontWeight: FontWeight.w400,
-                                    fontSize: 40.0.sp,
+                                    fontSize: 35.sp,
                                     color: Colors.white,
                                   ),
-
                                 ),
-                                Text('PRICE: 5',
+                                Text(
+                                  'PRICE: 5',
                                   style: TextStyle(
                                     fontWeight: FontWeight.w400,
                                     fontSize: 15.0.sp,
                                     color: Colors.white,
                                   ),
-
                                 ),
                                 Container(
                                   width: 120.0.w,
@@ -163,15 +159,12 @@ class _storeState extends State<store> {
                                     border: Border.all(color: Colors.white),
                                     shape: BoxShape.rectangle,
                                     color: Colors.white,
-
-                                    borderRadius:BorderRadius.circular(20.0.r),
+                                    borderRadius: BorderRadius.circular(20.0.r),
                                   ),
-                                  child: MaterialButton(onPressed:(){},
+                                  child: MaterialButton(
+                                    onPressed: () {},
                                     textColor: Colors.white,
-
-
                                     child: Text(
-
                                       'ORDER NOW',
                                       style: TextStyle(
                                         fontSize: 15.sp,
@@ -183,50 +176,49 @@ class _storeState extends State<store> {
                                 ),
                               ],
                             ),
-
                           ],
                         ),
                       ),
                     ),
                     Padding(
-                      padding:  EdgeInsets.all(8.0.w),
+                      padding: EdgeInsets.all(8.0.w),
                       child: Container(
                         decoration: BoxDecoration(
                           border: Border.all(color: Colors.white),
-                          borderRadius:BorderRadius.circular(20.0.r),
+                          borderRadius: BorderRadius.circular(20.0.r),
                           color: Colors.black,
-
                         ),
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.spaceAround,
                           crossAxisAlignment: CrossAxisAlignment.center,
                           children: [
-
                             Column(
                               crossAxisAlignment: CrossAxisAlignment.end,
                               children: [
-                                Image.asset('assets/imeges/Image 1.png',height: 130.h,),
+                                Image.asset(
+                                  'assets/imeges/Image 1.png',
+                                  height: 130.h,
+                                ),
                               ],
                             ),
                             Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-
-                                Text('BTA TAG',
+                                Text(
+                                  'BTA TAG',
                                   style: TextStyle(
                                     fontWeight: FontWeight.w400,
-                                    fontSize: 40.0.sp,
+                                    fontSize: 35.sp,
                                     color: Colors.white,
                                   ),
-
                                 ),
-                                Text('PRICE: 5',
+                                Text(
+                                  'PRICE: 5',
                                   style: TextStyle(
                                     fontWeight: FontWeight.w400,
                                     fontSize: 15.0.sp,
                                     color: Colors.white,
                                   ),
-
                                 ),
                                 Container(
                                   width: 120.0.w,
@@ -235,15 +227,12 @@ class _storeState extends State<store> {
                                     border: Border.all(color: Colors.white),
                                     shape: BoxShape.rectangle,
                                     color: Colors.white,
-
-                                    borderRadius:BorderRadius.circular(20.0.r),
+                                    borderRadius: BorderRadius.circular(20.0.r),
                                   ),
-                                  child: MaterialButton(onPressed:(){},
+                                  child: MaterialButton(
+                                    onPressed: () {},
                                     textColor: Colors.white,
-
-
                                     child: Text(
-
                                       'ORDER NOW',
                                       style: TextStyle(
                                         fontSize: 15.sp,
@@ -255,50 +244,49 @@ class _storeState extends State<store> {
                                 ),
                               ],
                             ),
-
                           ],
                         ),
                       ),
                     ),
                     Padding(
-                      padding:  EdgeInsets.all(8.0.w),
+                      padding: EdgeInsets.all(8.0.w),
                       child: Container(
                         decoration: BoxDecoration(
                           border: Border.all(color: Colors.white),
-                          borderRadius:BorderRadius.circular(20.0.r),
+                          borderRadius: BorderRadius.circular(20.0.r),
                           color: Colors.black,
-
                         ),
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.spaceAround,
                           crossAxisAlignment: CrossAxisAlignment.center,
                           children: [
-
                             Column(
                               crossAxisAlignment: CrossAxisAlignment.end,
                               children: [
-                                Image.asset('assets/imeges/Image 1.png',height: 130.h,),
+                                Image.asset(
+                                  'assets/imeges/Image 1.png',
+                                  height: 130.h,
+                                ),
                               ],
                             ),
                             Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-
-                                Text('BTA TAG',
+                                Text(
+                                  'BTA TAG',
                                   style: TextStyle(
                                     fontWeight: FontWeight.w400,
-                                    fontSize: 40.0.sp,
+                                    fontSize: 35.sp,
                                     color: Colors.white,
                                   ),
-
                                 ),
-                                Text('PRICE: 5',
+                                Text(
+                                  'PRICE: 5',
                                   style: TextStyle(
                                     fontWeight: FontWeight.w400,
                                     fontSize: 15.0.sp,
                                     color: Colors.white,
                                   ),
-
                                 ),
                                 Container(
                                   width: 120.0.w,
@@ -307,15 +295,12 @@ class _storeState extends State<store> {
                                     border: Border.all(color: Colors.white),
                                     shape: BoxShape.rectangle,
                                     color: Colors.white,
-
-                                    borderRadius:BorderRadius.circular(20.0.r),
+                                    borderRadius: BorderRadius.circular(20.0.r),
                                   ),
-                                  child: MaterialButton(onPressed:(){},
+                                  child: MaterialButton(
+                                    onPressed: () {},
                                     textColor: Colors.white,
-
-
                                     child: Text(
-
                                       'ORDER NOW',
                                       style: TextStyle(
                                         fontSize: 15.sp,
@@ -327,12 +312,10 @@ class _storeState extends State<store> {
                                 ),
                               ],
                             ),
-
                           ],
                         ),
                       ),
                     ),
-
                   ],
                 ),
               ),
@@ -342,5 +325,4 @@ class _storeState extends State<store> {
       ),
     );
   }
-}
-/**/
+} /**/
